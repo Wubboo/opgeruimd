@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
         'daily': (context) =>  Daily(),
         'weekly': (context) =>  Weekly(),
         'monthly': (context) =>  Monthly(),
-      },
+      }, 
 
     );
   }
