@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
                 leading: Icon(  Icons.home),
                 title: const Text('Home'),
                 onTap: () {
+                  Navigator.pop(context); // Close the drawer
                   Navigator.pushNamed(context, 'home');
                   
                   // Handle Home tap
@@ -36,6 +37,7 @@ class Home extends StatelessWidget {
                 leading: Icon(  Icons.settings),
                 title: const Text('Settings'),
                 onTap: () {
+                  Navigator.pop(context); // Close the drawer
                   Navigator.pushNamed(context, 'settings');
                   // Handle Settings tap
                 },
@@ -44,7 +46,7 @@ class Home extends StatelessWidget {
                   leading: Icon(  Icons.calendar_today),
                   title: const Text('Daily'),
                   onTap: () {
-                  
+                  Navigator.pop(context); // Close the drawer
                     Navigator.pushNamed(context, 'daily');
                   },
                 ),
@@ -52,7 +54,7 @@ class Home extends StatelessWidget {
                   leading: Icon(  Icons.calendar_view_week_rounded),
                   title: const Text('Weekly'),
                   onTap: () {
-                    
+                  Navigator.pop(context); // Close the drawer
                     Navigator.pushNamed(context, 'weekly');
                   },
                 ),
@@ -60,7 +62,7 @@ class Home extends StatelessWidget {
                   leading: Icon(  Icons.calendar_view_month_rounded),
                   title: const Text('Monthly'),
                   onTap: () {
-                    
+                  Navigator.pop(context); // Close the drawer
                     Navigator.pushNamed(context, 'monthly');
                   },
                 ),  
