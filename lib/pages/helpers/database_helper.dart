@@ -9,6 +9,7 @@ class DatabaseHelper {
   final String _idColumnName = "id";
   final String _taskContentColumnName = "content";
   final String _taskStatusColumnName = "status";
+  final String _tastTypeColumnName = "type";
 
 static Database? _db;
 static final DatabaseHelper instance = DatabaseHelper._constructor();
@@ -32,7 +33,8 @@ final database = await openDatabase(
     CREATE TABLE $_taskTableName (
   $_idColumnName INTEGER PRIMARY KEY AUTOINCREMENT,
   $_taskContentColumnName TEXT NOT NULL,
-  $_taskStatusColumnName INTEGER NOT NULL
+  $_taskStatusColumnName INTEGER NOT NULL,
+  $_tastTypeColumnName TEXT NOT NULL
     )
      '''
     );
