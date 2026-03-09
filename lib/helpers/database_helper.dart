@@ -46,7 +46,8 @@ void addTask(String content) async {
   final db = await instance.getDatabase();
   await db.insert(_taskTableName, {
     _taskContentColumnName: content,
-    _taskStatusColumnName: 0
+    _taskStatusColumnName: 0,
+    _tastTypeColumnName: "daily",
   });
 }
 }

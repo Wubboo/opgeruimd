@@ -5,12 +5,15 @@ class Daily extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.green[200],
         title: Align(
           alignment: Alignment.centerLeft,
           child: Text('Opgeruimd Daily'),)
       ),
+
+      
       body: Center(
         child: Text('Daily Page'),
       ),
